@@ -8,6 +8,12 @@ app.use('/', (req, res, next) => {
   next(error);
 });
 
+/*
+    #1: First, Fifth, Seventh
+    #2: First, Fifth, Sixth, Seventh
+    #3: First, Fifth, Seventh
+*/
+
 // Second
 app.use((req, res, next) => {
   console.log('Second');
